@@ -2,9 +2,8 @@
 layout: post
 title:  Post Example
 categories:
-- bar
-- baz
-- z_category
+- testcat1
+- testcat1a
 tags:
 - first
 - second
