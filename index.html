@@ -2,10 +2,9 @@
 layout: default
 title: Hello!
 ---
-
 Please read our {{ site.posts | size }} posts.
-
-<section class="styleguide__featured-section">
+<div class="code-sample">
+  <section class="styleguide__featured-section">
     <div class="featured-section">
         <div class="container-medium">
             <ul class="featured-list">
@@ -29,7 +28,8 @@ Please read our {{ site.posts | size }} posts.
             </ul>
         </div>
     </div>
-</section>
+  </section>
+</div>
 
 {% assign first_post = site.posts.first %}
 <div id="first_post">

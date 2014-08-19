@@ -10,7 +10,6 @@ tags:
 - third
 - jekyllrb.com
 ---
-
 First paragraph with [link ref][link].
 
 Second paragraph
