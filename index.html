@@ -3,10 +3,9 @@ layout: default
 title: rikusv
 ---
 
-Welcome to my site
-==================
+<h1>Welcome to my site</h1>
 
-## Please read our {{ site.posts | size }} Posts
+<h2>Please read our {{ site.posts | size }} Posts</h2>
 
 <ul>
   {% for post in site.posts %}
@@ -16,7 +15,7 @@ Welcome to my site
 
 {% assign first_post = site.posts.first %}
 <div id="first_post">
-  <h1>{{ first_post.title }}</h1>
+  <h2>{{ first_post.title }}</h2>
   <div>
     {{ first_post.content }}
   </div>
