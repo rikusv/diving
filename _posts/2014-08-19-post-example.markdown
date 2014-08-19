@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Post Excerpt with Layout
+title:  Post Example
 categories:
 - bar
 - baz
