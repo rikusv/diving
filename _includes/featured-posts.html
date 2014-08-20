@@ -4,7 +4,7 @@ At the moment, this is simply a featured list of all posts with excerpts and lin
 <h1>Latest posts</h1>
 <p>Here are some of my most recent posts so long.</p>
 {% for post in site.posts %}
-  <h3>{{ post.title }}</h3>
-  <p>{{ post.excerpt }}</p>
-  <p><a href="{{ post.url }}">Read more...</a></p>
+  <h2>{{ post.title }}</h2>
+  {{ post.excerpt }}
+  <a href="{{ post.url }}">Read more...</a>
 {% endfor %}
