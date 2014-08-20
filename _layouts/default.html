@@ -4,14 +4,10 @@
   <body class="page--styleguide">
     {% include header.html %}
     <main>
-        <div class="page-header">
-          <div class="container">
-            <h3 class="xxlarge text-divider">Hello!</h3>
-            <p class="page-header__excerpt g-wide--push-1 g-wide--pull-1">This is an experiment.  I am building this website on GitHub Pages using Jekyll functionality combined with Google Web Starter Kit.</p>
-          </div>
-        </div>
+      {{ content }}
     </main>
-    {{ content }}
+    <p>Latest posts:</p>
+    {% include featured-posts.html %}
 <!-- build:js scripts/main.min.js -->
 <script src="/scripts/main.js"></script>
 <!-- endbuild -->
@@ -25,5 +21,6 @@
   ga('create', 'UA-XXXXX-X');
   ga('send', 'pageview');
 </script>
-<!-- Built with love using Web Starter Kit -->  </body>
+<!-- Built with love using Web Starter Kit -->
+  </body>
 </html>
