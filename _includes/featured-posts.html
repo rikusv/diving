@@ -1,32 +1,10 @@
 <!--
 At the moment, this is simply a featured list of all posts with excerpts and links.
 -->
-<div class="highlight-module  highlight-module--left">
-    <div class="highlight-module__container  icon-menu ">
-        <div class="highlight-module__content   g-wide--push-1 g-wide--pull-1  g-medium--push-1   ">
-            <p class="highlight-module__title"> Latest posts</p>
-            <p class="highlight-module__text"> Here are some of my most recent posts so long. </p>
-        </div>
-    </div>
-</div>
-<div class="code-sample">
-  <section class="styleguide__featured-section">
-    <div class="featured-section">
-        <div class="container-medium">
-            <ul class="featured-list">
-              {% for post in site.posts %}
-                <li class="featured-list__item clear">
-                    <div class="container-small">
-                        <div class="featured-list__content">
-                            <h3>{{ post.title }}</h3>
-                            {{ post.excerpt }}
-                            <a href="{{ post.url }}" class="cta--primary">...more</a>
-                        </div>
-                    </div>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-  </section>
-</div>
+<h1>Latest posts</h1>
+<p>Here are some of my most recent posts so long.</p>
+{% for post in site.posts %}
+  <h3>{{ post.title }}</h3>
+  <p>{{ post.excerpt }}</p>
+  <p><a href="{{ post.url }}">Read more...</a></p>
+{% endfor %}
