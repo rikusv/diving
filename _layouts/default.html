@@ -4,10 +4,14 @@
   <body class="page--styleguide">
     {% include header.html %}
     <main>
+    <div class="site">
       {{ content }}
+    </div>
     </main>
-    <p>Latest posts:</p>
-    {% include featured-posts.html %}
+    <div>
+      <p>Latest posts:</p>
+      {% include featured-posts.html %}
+    </div>
 <!-- build:js scripts/main.min.js -->
 <script src="/scripts/main.js"></script>
 <!-- endbuild -->
