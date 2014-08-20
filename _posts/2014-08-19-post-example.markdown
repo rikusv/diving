@@ -10,12 +10,10 @@ tags:
 - third
 - jekyllrb.com
 ---
-First paragraph with [link ref][link].
+This is some stuff that I wrote.  The purpose of this stuff is to allow me to test this website thing.  I hope it works.
 
-Second paragraph
+Second paragraph.  More stuff.  Indeed.  I could have used that lorem ipsum Latin stuff.  If only I did, I wouldn't have had to think so hard.
 
----
+# This here is a heading.
 
-Third paragraph
-
-[link]: http://www.jekyllrb.com/
+Followed by some more text.
