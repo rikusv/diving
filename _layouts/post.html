@@ -4,10 +4,20 @@
   <body>
     {% include header.html %}
     <main>
-    <div class="code-sample">
       {{ content }}
-    </div>
     </main>
+    <div class="container-medium">
+      <nav class="article-nav">
+        <a href="{{ page.previous.url }}" class="article-nav-link article-nav-link--prev">
+          <p class="article-nav-count">{{ page.previous.date }}</p>
+          <p>{{ page.previous.title }}</p>
+        </a>
+        <a href="{{ page.next.url }}" class="article-nav-link article-nav-link--next">
+          <p class="article-nav-count">{{ page.next.date }}</p>
+          <p>{{ page.next.title }}</p>
+        </a>
+      </nav>
+    </div>
     <!-- build:js scripts/main.min.js -->
     <script src="/scripts/main.js"></script>
     <!-- endbuild -->
