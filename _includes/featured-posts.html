@@ -1,10 +1,12 @@
 <!--
 At the moment, this is simply a featured list of all posts with excerpts and links.
 -->
-<h1>Latest posts</h1>
+<h2>Latest posts</h2>
 <p>Here are some of my most recent posts so long.</p>
 {% for post in site.posts %}
-  <h2>{{ post.title }}</h2>
-  {{ post.abstract }}
-  <a href="{{ post.url }}">Read more...</a>
+  <div class="featured-list__content g--half">
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.abstract }}</p>
+    <a href="{{ post.url }}" class="cta--primary">Read more</a>
+  </div>
 {% endfor %}
