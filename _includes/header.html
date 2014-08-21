@@ -16,7 +16,7 @@
     <li><a href="/About">About</a></li>
     <li><a href="/styleguide/index.html">temp Style Guide</a></li>
     {% for category in site.categories %}
-    <li><a href="/{{ category | first | slugize }}/">{{ category | first }}</a></li>
+    <li><a href="/{{ category | first | slugize }}/">{{ category | first | capitalize }}</a></li>
     {% endfor %}
   </ul>
 </nav>
