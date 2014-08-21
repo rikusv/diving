@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Post Example
+abstract: Bla test tets bla.
 categories:
 - testcat1
 - testcat1a
