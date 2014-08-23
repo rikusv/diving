@@ -19,7 +19,7 @@
     <li><a href="/{{ category | first | urlize }}/">
       {% assign words = category | first | split: '-' %}
       {% for word in words %}
-        {{ word | capitalize }}
+        {{ word | capitalize | replace: 'The','the' }}
       {% endfor %}
     </a></li>
     {% endfor %}
