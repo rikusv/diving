@@ -1,0 +1,40 @@
+---
+title: Test
+abstrat: ljsd lajsld jlk dj
+---
+# hello
+
+This:
+
+<html>
+<head>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("visualization", '1', {packages:['corechart']});
+google.setOnLoadCallback(drawChart);
+function drawChart() {
+  var query = new google.visualization.Query(
+      'https://docs.google.com/spreadsheets/d/1_BgU5kmTiGIBUOAe9B8TlzwxWaH1rwRR0ZNwO8j0cGE/gviz/tq?sheet=dives_per_country&range=A1:B5');
+
+  query.send(handleQueryResponse);
+}
+
+function handleQueryResponse(response) {
+  if (response.isError()) {
+    alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+    return;
+  }
+
+  var data = response.getDataTable();
+  var chart = new google.visualization.ColumnChart(document.getElementById('columnchart'));
+  chart.draw(data, { legend: { position: 'none' } });
+}
+</script>
+
+<title>Data from a Spreadsheet</title>
+</head>
+
+<body>
+<div style="max-width:100%" id='columnchart'></div>
+</body>
+</html>

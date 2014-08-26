@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["treemap"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1_BgU5kmTiGIBUOAe9B8TlzwxWaH1rwRR0ZNwO8j0cGE/gviz/tq?sheet=treemap');
+
+        query.send(handleQueryResponse);
+}
+
+function handleQueryResponse(response) {
+  if (response.isError()) {
+    alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+    return;
+}
+
+  var data = response.getDataTable();
+
+  var tree = new google.visualization.TreeMap(document.getElementById('treemap_div'));
+    tree.draw(data, {
+      minColor: '#b7cdf4',
+      midColor: '#4285f4',
+      maxColor: '#3372df',
+      headerHeight: 30,
+      fontColor: 'black',
+      generateTooltip: showFullTooltip
+      });
+
+  function showFullTooltip(row, size, value) {
+    return '<div style="background:#ffffff; padding:10px; border-width:1px; border-style:solid">' +
+           '<span><b>' +
+           data.getValue(row, 0) +
+           '</b></span><br>' +
+           data.getColumnLabel(2) +
+           ': ' + size + '<br>' +
+           data.getColumnLabel(3) + ': ' + data.getValue(row, 3) + '<br>' +
+           '<a href="/diving/dive-log/map/" class="cta--primary">Map</a>' + ' </div>';
+  }
+
+}
+
+    </script>
+  </head>
+
+  <body>
+    <p></p>
+    <div style="max-width:100%" id='treemap_div'></div>
+  </body>
+</html>

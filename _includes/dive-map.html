@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <style>
+      .gm-style img { max-width: none; }
+      .gm-style label { width: auto; display: inline; }
+    </style>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["map"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1W9rQtwN6JcQykiXnXWrxzo33HqNzB6tEjALeuiElan4/gviz/tq?sheet=map&range=A:C');
+
+        query.send(handleQueryResponse);
+}
+
+function handleQueryResponse(response) {
+  if (response.isError()) {
+    alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+    return;
+}
+
+  var data = response.getDataTable();
+
+        var map = new google.visualization.Map(document.getElementById('map_div'));
+        map.draw(data, {showTip: true
+        });
+      }
+
+    </script>
+  </head>
+
+  <body>
+    <div id="map_div" style="map-div"></div>
+  </body>
+</html>
