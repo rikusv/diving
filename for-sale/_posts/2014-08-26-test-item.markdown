@@ -1,0 +1,10 @@
+---
+title: Test Item
+abstract: Wonderful great excellent thing for sale.
+price: 500
+status: available
+layout: for-sale-item
+---
+# Test Item
+
+It is fantastic.

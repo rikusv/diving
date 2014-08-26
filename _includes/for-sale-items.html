@@ -1,0 +1,26 @@
+<table class="table-4">
+            <colgroup>
+              <col span="1">
+              <col span="1">
+              <col span="1">
+              <col span="1">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Price (AUD)</th>
+                <th>Status</th>
+                <th>Photo</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for post in site.categories.for-sale %}
+                <tr>
+                  <td data-th="Item"><code><a href="{{ post.url }}" class="cta--primary">{{ post.title }}</a></code></td>
+                  <td data-th="Price (AUD)">{{ post.price }}</td>
+                  <td data-th="Status">{{ post.status }}</td>
+                  <td data-th="Photo"><a href="/images/photos/{{ post.id | remove:"/for-sale/" }}.jpg"><img src="/images/photos/{{ post.id | remove:"/for-sale/" }}.jpg" alt="{{ post.title }}"></a></td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
