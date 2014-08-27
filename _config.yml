@@ -1,8 +1,15 @@
-permalink: /:categories/:title
-
+---
 defaults:
   -
     scope:
       path: ""
+      type: post
     values:
-      layout: "post"
+      layout: post
+  -
+    scope:
+      path: for-sale
+      type: post
+    values:
+      layout: for-sale-item
+permalink: "/:categories/:title"

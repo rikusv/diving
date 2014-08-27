@@ -1,0 +1,9 @@
+---
+title: Set of Bedside Tables
+abstract: ???
+price: ???
+status: Available
+---
+???
+
+Can be purchase as part of [Queen Bed Suite]({% post_url 2014-08-26-queen-bed-suite %}).

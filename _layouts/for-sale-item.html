@@ -3,24 +3,40 @@
 {% include head.html %}
   <body>
     {% include header.html %}
+
     <main>
-      <div class="g--half">
+      <table class="table-3">
+          <colgroup>
+            <col span="1">
+            <col span="1">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Photo</th>
+              <th>Overview</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:0px" data-th="Photo"><a href="/images/photos/{{ page.id | remove:"/for-sale/" }}.jpg"><img src="/images/photos/{{ page.id | remove:"/for-sale/" }}.jpg" alt="{{ page.title }}"></a></td>
+              <td data-th="Overview">
+                <p class="large">{{ page.title }}</p>
+                <ul>
+                  <li>Price: AUD {{ page.price }}</li>
+                  <li>Status: {{ page.status }}</li>
+                  <li>{{ page.abstract }}</li>
+
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
         {{ content }}
-      </div>
-      <div class="g--half g--last">
-        <br>
-        <img src="/images/photos/{{ page.id | remove:"/for-sale/" }}.jpg" alt="{{ post.title }}">
-      </div>
-      <div class="g--half">
-      <h3><a href="/for-sale/">All items:</a></h3>
-      <ol>
-        {% for post in site.categories.for-sale %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      </ol>
-      </div>
+        <p><a href="/for-sale/" class="cta--primary">Return to list of all items.</a></p>
 
     </main>
+    {% include footer.html %}
+
     <!-- build:js scripts/main.min.js -->
     <script src="/scripts/main.js"></script>
     <!-- endbuild -->

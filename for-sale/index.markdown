@@ -3,8 +3,6 @@ title: Another Category
 layout: normal-include
 thing: for-sale-items.html
 ---
-# Another Category
+# Items for Sale
 
-This is an experiment. I am building this website on GitHub Pages using Jekyll functionality combined with Google Web Starter Kit.
-
-Example table:
+As we are relocating to South Africa, we have decided to sell the following items.

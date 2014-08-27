@@ -1,0 +1,7 @@
+---
+title: Fisher & Paykel Fridge
+abstract: ???
+price: price?
+status: Available
+---
+Model?  Etc.?
