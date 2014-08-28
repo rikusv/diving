@@ -5,6 +5,7 @@
     {% include header.html %}
 
     <main>
+      <h1>{{ page.title }}</h1>
       <table class="table-3">
           <colgroup>
             <col span="1">
@@ -20,12 +21,14 @@
             <tr>
               <td style="padding:0px" data-th="Photo"><a href="/images/photos/{{ page.id | remove:"/for-sale/" }}.jpg"><img src="/images/photos/{{ page.id | remove:"/for-sale/" }}.jpg" alt="{{ page.title }}"></a></td>
               <td data-th="Overview">
-                <p class="large">{{ page.title }}</p>
                 <ul>
-                  <li>Price: AUD {{ page.price }}</li>
-                  <li>Status: {{ page.status }}</li>
                   <li>{{ page.abstract }}</li>
-
+                  <li>Status: {{ page.status }}</li>
+                  <li>Price: AUD {{ page.price }}</li>
+                  {% if page.price-new > 0 %}
+                  <li>Price New: AUD {{ page.price-new }}</li>
+                  {% else %}
+                  {% endif %}
                 </ul>
               </td>
             </tr>

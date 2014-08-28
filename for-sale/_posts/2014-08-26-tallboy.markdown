@@ -1,9 +1,21 @@
 ---
-title: Tall Boy
-abstract: ???
-price: ???
+title: Soho 5 Drawer Tallboy
+abstract: Chocolate brown Soho tallboy in very good condition.  $349 new.
+price: 150
+price-new: 349
 status: Available
+tag: bedroom-suite
 ---
-???
+Can be purchase as part of [Queen Bed Suite]({% post_url 2014-08-26-bedroom-suite %}).
 
-Can be purchase as part of [Queen Bed Suite]({% post_url 2014-08-26-queen-bed-suite %}).
+_Description from [Fantastic Furniture's listing](http://www.fantasticfurniture.com.au/Categories/Storage/Soho-5-Drawer-Tallboy/p/SOHTBY5DWOOOTVRCHO):_
+
+## Tall Order  
+
+If a bit of order is required in your bedroom then the Soho tallboy will help you keep everything organised. There's plenty of space for clothes and accessories in five handy drawers, plus space on top for a few decorative items.
+
+## Drawer Space
+Keep pants and tops in the three large bottom drawers, with socks and accessories in the two smaller top drawers. The drawers glide out smoothly and easily on metal runners.
+
+## Contoured Handles
+The fine, brushed aluminium handles are contoured for an easy grip.

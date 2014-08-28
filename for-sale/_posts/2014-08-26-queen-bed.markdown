@@ -1,9 +1,20 @@
 ---
-title: Queen Bed
-abstract: ???
-price: ???
+title: Bravo Queen Bed
+abstract: Brown Bravo queen bed in very good condition.  $299 new, without mattress; our price with mattress.
+price: 200
+price-new: 299
 status: Available
+tag: bedroom-suite
 ---
-???
+Can be purchase as part of [Queen Bed Suite]({% post_url 2014-08-26-bedroom-suite %}).
 
-Can be purchase as part of [Queen Bed Suite]({% post_url 2014-08-26-queen-bed-suite %}).
+_Description from [Fantastic Furniture's listing](http://www.fantasticfurniture.com.au/Categories/Bedroom/Beds/Bravo-Queen-Bed/p/BRVBEDQNNOOOPVCBRO):_
+
+## Modern Glamour  
+
+Make a fashion statement in your bedroom with the Bravo queen bed.
+
+The glamorous Bravo queen bed is fully upholstered with detailed accent stitching across the padded headboard and base. (Mattress not included).
+
+## Soft Upholstery
+Upholstered in a soft, hardwearing PVC, this bed is easy to clean and maintain so you can enjoy its supermodel good looks for longer.
