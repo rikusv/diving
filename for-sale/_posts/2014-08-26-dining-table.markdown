@@ -1,5 +1,5 @@
 ---
-title: Vue Luca 2-piece Outdoor Bench Setting
+title: Vue Luca 3-piece Outdoor Bench Setting
 abstract: Glass-top table and two benches in very good condition.  Can be used outdoors, but we used it inside.
 price: 400
 price-new: 699
