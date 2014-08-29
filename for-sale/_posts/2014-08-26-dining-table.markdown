@@ -1,9 +1,9 @@
 ---
-title: Dining Table with Benches
-abstract: Two chocolate brown Soho bedside tables in very good condition.  $169 each new; bargain at $160 for both.
-price: 160
-price-new: 338
+title: Vue Luca 2-piece Outdoor Bench Setting
+abstract: Glass-top table and two benches in very good condition.  Can be used outdoors, but we used it inside.
+price: ???
+price-new: 699
 status: Available
 photo: dining-table.jpg
 ---
-???
+We used this table as a dining room table.  It seats four comfortably, or six smaller people.
