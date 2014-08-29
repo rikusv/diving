@@ -4,48 +4,73 @@
   <body>
     {% include header.html %}
 
-    <main>
-      <h1>{{ page.title }}</h1>
-      <table class="table-3">
-          <colgroup>
-            <col span="1">
-            <col span="1">
-          </colgroup>
-          <thead>
-            <tr>
-              <th>Photo</th>
-              <th>Overview</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style="padding:0px" data-th="Photo">
-                <a href="
-                {% if page.gplus-url %}
-                  {{ page.gplus-url }}
-                {% else %}
-                  /images/photos/{{ page.photo }}
-                {% endif %}
-                "><img src="/images/photos/{{ page.photo }}" alt="{{ page.title }}"></a>
-              </td>
-              <td data-th="Overview">
-                <ul>
-                  <li>{{ page.abstract }}</li>
-                  <li>Status: {{ page.status }}</li>
-                  <li>Price: AUD {{ page.price }}</li>
-                  {% if page.price-new > 0 %}
-                  <li>Price New: AUD {{ page.price-new }}</li>
-                  {% else %}
-                  {% endif %}
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        {{ content }}
-        <p><a href="/for-sale/" class="cta--primary">Return to list of all items.</a></p>
+    <div class="guides-section">
+      <header class="container">
+        <h2 class="xxlarge">{{ page.title }}</h2>
+        <p>Follow these guides and build web content users can access on any device they choose.</p>
+      </header>
+      <ul class="guides-list container">
+        <li class="guides-list__item g--half theme--introduction-to-media">
+          <div class="primary-content" style="padding:0px">
+            <a href="
+            {% if page.gplus-url %}
+              {{ page.gplus-url }}
+            {% else %}
+              /images/photos/{{ page.photo }}
+            {% endif %}
+            "><img src="/images/photos/{{ page.photo }}" alt="{{ page.title }}"></a>
+          </div>
+          <div class="secondary-content" style="margin-top: 0px">
+            <span class="icon-circle themed--background">
+              <i class="icon icon-lessons"></i>
+            </span>
+            <ol class="list-links list-links--secondary">
+              <li>Status: {{ page.status }}</li>
+              <li>Price: AUD {{ page.price }}</li>
+              {% if page.price-new > 0 %}
+              <li>Price New: AUD {{ page.price-new }}</li>
+              {% else %}
+              {% endif %}
+            </ol></div></li>
+            <li class="guides-list__item g--half theme--user-input g--last">
+          <div class="primary-content">
+            <p>{{ page.abstract }}</p>
+          </div>
+          <div class="secondary-content">
+            <span class="icon-circle themed--background">
+              <i class="icon icon-tick"></i>
+            </span>
+            <ol class="list-links list-links--secondary">
+              <li>Email: hhkdhsks</li>
+              <li>Telephone: 289137891</li>
+              <li><br></li>
+            </ol>
+          </div>
+        </li>
 
-    </main>
+
+        <li class="guides-list__item g--half theme--multi-device-layouts">
+          <div class="primary-content">
+            <h3 class="xlarge"><a class="themed">Further Details</a></h3>
+            {{ content }}
+            <br>
+          </div>
+        </li>
+        <li class="guides-list__item g--half theme--multi-device-layouts g--last">
+          <div class="primary-content">
+            <h3 class="xlarge"><a class="themed">Other Items For Sale</a></h3>
+            <ol class="list-links list-links--secondary">
+              {% for post in site.related_posts | limit: 5 %}
+              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
+              <p><a href="/for-sale/" class="cta--primary">Return to list of all items.</a></p>
+            </ol>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
     {% include footer.html %}
 
     <!-- build:js scripts/main.min.js -->

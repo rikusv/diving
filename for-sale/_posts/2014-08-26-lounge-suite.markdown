@@ -1,5 +1,5 @@
 ---
-title: ??? Lounge Suite
+title: VUE Morgan Chaise Lounge
 abstract: ???
 price: ???
 status: Available
