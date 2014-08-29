@@ -10,4 +10,4 @@ We bought our 2011 model year VW Golf 118 TSI in November 2010.  We've looked af
 
 Full service history at VW dealer.
 
-[See more photos on Google Plus.]({{ page.gplus-url }})
+[More photos on Google Plus.]({{ page.gplus-url }})

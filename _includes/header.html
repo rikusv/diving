@@ -1,7 +1,16 @@
 <header class="app-bar promote-layer">
   <div class="app-bar-container">
     <button class="menu"><img src="/images/hamburger.svg" alt="Menu"></button>
-    <h1 class="logo">{{ page.title }}</h1>
+    <h1 class="logo">
+      {% if page.categories %}
+        {% assign words = page.categories | first | split: '-' %}
+        {% for word in words %}
+          {{ word | capitalize | replace: 'The','the' }}
+        {% endfor %}
+      {% else %}
+        {{ page.title }}
+      {% endif %}
+    </h1>
     <section class="app-bar-actions">
         <!-- Put App Bar Buttons Here -->
     </section>
