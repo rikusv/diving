@@ -7,7 +7,6 @@
     <div class="guides-section">
       <header class="container">
         <h2 class="xxlarge">{{ page.title }}</h2>
-        <p>Follow these guides and build web content users can access on any device they choose.</p>
       </header>
       <ul class="guides-list container">
         <li class="guides-list__item g--half theme--introduction-to-media">
@@ -41,9 +40,14 @@
               <i class="icon icon-tick"></i>
             </span>
             <ol class="list-links list-links--secondary">
-              <li>Email: hhkdhsks</li>
-              <li>Telephone: 289137891</li>
+              <li>Telephone: +61 4 0419 5584</li>
               <li><br></li>
+              <li>
+                {% if page.price-new %}
+                  <br>
+                {% else %}
+                {% endif %}
+              </li>
             </ol>
           </div>
         </li>
@@ -63,6 +67,7 @@
               {% for post in site.related_posts | limit: 5 %}
               <li><a href="{{ post.url }}">{{ post.title }}</a></li>
               {% endfor %}
+              <li><a href="/for-sale/">and more...</a></li>
               <p><a href="/for-sale/" class="cta--primary">Return to list of all items.</a></p>
             </ol>
           </div>

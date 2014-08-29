@@ -2,6 +2,7 @@
 title: Fisher & Paykel Fridge
 abstract: ???
 price: price?
+price-new: 1000
 status: Available
 photo: fridge.jpg
 ---

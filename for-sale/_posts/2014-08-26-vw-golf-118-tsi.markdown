@@ -1,9 +1,13 @@
 ---
 title: Volkswagen Golf 118 TSI MY 2011
-abstract: 2011 model year Golf purchased November 2010.  In great condition, with only 32300 kilometres.
-price:
+abstract: 2011 model year Golf purchased new in November 2010.  In great condition, with only 32,300 kilometres.
+price: 18000
 status: Available
 gplus-url: https://plus.google.com/photos/104076106541632046895/albums/6052647056336655249?authkey=CKLI-cLTxMaeoAE
 photo: vw-golf-118-tsi.jpg
 ---
-dd
+We bought our 2011 model year VW Golf 118 TSI in November 2010.  We've looked after it very well, and wanted to take it with us when we emigrate from Australia, but the anticipated administration and cost has resulted in our having to sell it.
+
+Full service history at VW dealer.
+
+[See more photos on Google Plus.]({{ page.gplus-url }})
