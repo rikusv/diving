@@ -1,9 +1,9 @@
 ---
 title: Fisher & Paykel Fridge
-abstract: ???
-price: price?
+abstract: 403 litre Fisher & Paykel Fridge in very good condition.
+price: 500
 price-new: 1000
 status: Available
 photo: fridge.jpg
 ---
-Model?  Etc.?
+_Specifications: Model number E402BRE, volume 403 litres (fridge 280 litres, freezer: 123 litres)._
