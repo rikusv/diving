@@ -4,7 +4,7 @@ abstract: Two chocolate brown Soho bedside tables in very good condition.  $169 
 price: 160
 price-new: 338
 status: Available
-photo: bedside-tables.jpg
+photo: bedside-table.jpg
 tag: bedroom-suite
 ---
 Can be purchase as part of [ Bedroom Suite]({% post_url 2014-08-26-bedroom-suite %}).
