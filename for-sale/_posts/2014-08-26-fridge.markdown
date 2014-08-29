@@ -3,5 +3,6 @@ title: Fisher & Paykel Fridge
 abstract: ???
 price: price?
 status: Available
+photo: fridge.jpg
 ---
 Model?  Etc.?

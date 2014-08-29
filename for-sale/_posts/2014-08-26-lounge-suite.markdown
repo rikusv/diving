@@ -3,5 +3,6 @@ title: ??? Lounge Suite
 abstract: ???
 price: ???
 status: Available
+photo: lounge-suite.jpg
 ---
 ???

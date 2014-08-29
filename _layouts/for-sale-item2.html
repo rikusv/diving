@@ -4,6 +4,17 @@
   <body>
     {% include header.html %}
 
+    <div class="featured-spotlight"><div class="container-medium"><div class="featured-spotlight__container g--pull-half"><div class="featured-spotlight__img"><img src="../../imgs/placeholder--featured-spotlight.png" alt="image exemple"></div><div class="container-small"><h3 class="featured-spotlight__title">Featured spotlight</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed vitae varius augue, eu varius dolor.</p><a href="#" class="cta--primary">View Google</a></div></div></div></div>
+
+    <div class="highlight-module highlight-module--left highlight-module--learning">
+      <div class="highlight-module__container"><img src="/images/photos/{{ page.photo }}" alt="{{ page.title }}">
+        <div class="highlight-module__content g-wide--push-1 g-wide--pull-1 g-medium--push-1">
+          <p class="highlight-module__title">TL;DR</p>
+          <p class="highlight-module__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+
     <main>
       <h1>{{ page.title }}</h1>
       <table class="table-3">

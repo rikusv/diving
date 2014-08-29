@@ -14,7 +14,6 @@
     <li><a href="/">Hello</a></li>
     <li><a href="https://plus.google.com/u/0/+RikusvanVuuren">Google+</a></li>
     <li><a href="/About">About</a></li>
-    <li><a href="/styleguide/index.html">temp Style Guide</a></li>
     {% for category in site.categories %}
     <li><a href="/{{ category | first | urlize }}/">
       {% assign words = category | first | split: '-' %}

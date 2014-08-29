@@ -1,9 +1,10 @@
 ---
 title: Soho 5 Drawer Tallboy
-abstract: Chocolate brown Soho tallboy in very good condition.  $349 new.
+abstract: Chocolate brown Soho tallboy in very good condition.
 price: 150
 price-new: 349
 status: Available
+photo: tallboy.jpg
 tag: bedroom-suite
 ---
 Can be purchase as part of [Queen Bed Suite]({% post_url 2014-08-26-bedroom-suite %}).

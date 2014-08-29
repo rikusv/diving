@@ -10,7 +10,7 @@
       <th>Item</th>
       <th>Price</th>
       <th>Status</th>
-      <th>Photo</th>
+      <th>Photos</th>
     </tr>
   </thead>
   <tbody>
@@ -19,9 +19,21 @@
       <td data-th="Item">
         <a href="{{ post.url }}" class="cta--secondary">{{ post.title }}</a>
       </td>
-        <td data-th="Price">AUD {{ post.price }}</td>
-        <td data-th="Status">{{ post.status }}</td>
-        <td style="padding:0px" data-th="Photo"><a href="/images/photos/{{ post.id | remove:"/for-sale/" }}.jpg"><img src="/images/photos/{{ post.id | remove:"/for-sale/" }}.jpg" alt="{{ post.title }}"></a></td>
+      <td data-th="Price">
+        AUD {{ post.price }}
+      </td>
+      <td data-th="Status">
+        {{ post.status }}
+      </td>
+      <td style="padding:0px" data-th="Photos">
+        <a href="
+        {% if post.gplus-url %}
+          {{ post.gplus-url }}
+        {% else %}
+          /images/photos/{{ post.photo }}
+        {% endif %}
+        "><img src="/images/photos/{{ post.photo }}" alt="{{ post.title }}"></a>
+      </td>
     </tr>
     {% endfor %}
   </tbody>

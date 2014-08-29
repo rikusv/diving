@@ -1,5 +1,5 @@
 ---
-title: Another Category
+title: For Sale
 layout: normal-include
 thing: for-sale-items.html
 ---
