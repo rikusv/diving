@@ -1,6 +1,6 @@
 ---
 title: Electrolux Washing Machine
-abstract: Electrolux Time Machine 7kg Eco Wash System in very good condition.
+abstract: Electrolux Time Manager 7kg Eco Wash System in very good condition.
 price: 300
 price-new: 630
 status: Available
