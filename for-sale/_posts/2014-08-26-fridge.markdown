@@ -6,4 +6,4 @@ price-new: 1000
 status: Available
 photo: fridge.jpg
 ---
-_Specifications: Model number E402BRE, volume 403 litres (fridge 280 litres, freezer: 123 litres)._
+_Specifications: Model number E402BRE, volume 403 litres (fridge 280 litres, freezer: 123 litres), dimensions: height 1695mm, width 635mm, depth 736mm._
