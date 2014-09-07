@@ -3,7 +3,7 @@ title: Bravo Queen Bed
 abstract: Brown Bravo queen bed in very good condition.  The price new is without mattress; our price includes a good quality mattress.
 price: 200
 price-new: 299
-status: Available
+status: Sold
 photo: queen-bed.jpg
 tag: bedroom-suite
 ---
