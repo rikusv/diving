@@ -1,7 +1,7 @@
 ---
 title: 15 Litre Faber Steel SCUBA Cylinder
 abstract: Faber Steel 15 litre SCUBA tank, with 232 bar DIN valve, boot and handle, in great condition.
-price: 380
+price: 350
 price-new: 640
 status: Available
 photo: scuba-cylinder.jpg
